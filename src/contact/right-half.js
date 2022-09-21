@@ -8,6 +8,23 @@ export const contactRight = () => {
     map.id = 'map';
 
     rightSidePage.appendChild(map);
+
+    const address = document.createElement('h4');
+    address.textContent = 'address here'
+
+    const hours = document.createElement('h4');
+    hours.textContent = 'store hours here'
+
+    const number = document.createElement('h4');
+    number.textContent = 'phone number here'
+
+
+    rightSidePage.appendChild(address);
+    rightSidePage.appendChild(hours);
+    rightSidePage.appendChild(number);
+
+
+
     content.appendChild(rightSidePage);
 
 }

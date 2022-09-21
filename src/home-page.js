@@ -15,4 +15,12 @@ export const homePage = () => {
     content.appendChild(burger);
     content.appendChild(title);
     content.appendChild(text);
+
+    const foodImgContainer = document.createElement('div');
+    const largeImgContainer = document.createElement('div');//holds one large image of a meal
+    const smallImgContainer = document.createElement('div');//hold 4 smaller images of different meals
+
+
+    const tagUsContainer = document.createElement('div')//hold many small images of ppl with food or just pics of food they have taken
+
 };
