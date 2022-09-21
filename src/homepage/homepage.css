@@ -1,0 +1,28 @@
+.food-img-container {
+    width: 100vw;
+    height: 30rem;
+    border: 2px solid black;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+#large-pic-container {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+
+}
+
+#small-pic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 2px solid black;
+
+}
+
+.small {
+    border: 2px solid black;
+
+}

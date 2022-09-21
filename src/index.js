@@ -1,4 +1,4 @@
-import { homePage } from './home-page.js'
+import { homePage } from './homepage/home-page.js'
 import { contactInfo } from './contact/contact.js'
 import { menuPage } from './menu/menu.js'
 
