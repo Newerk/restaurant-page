@@ -1,5 +1,5 @@
 import { homePage } from './home-page.js'
-import { contactInfo } from './contact.js'
+import { contactInfo } from './contact/contact.js'
 
 homePage();
 
