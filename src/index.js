@@ -1,6 +1,7 @@
 import { homePage } from './homepage/home-page.js'
 import { contactInfo } from './contact/contact.js'
 import { menuPage } from './menu/menu.js'
+import { popular } from './menu/popular.js';
 
 homePage();
 const navbar = document.querySelector('#navbar');
@@ -22,6 +23,7 @@ menuTab.textContent = 'Menu';
 menuTab.addEventListener('click', () => {
     wipe();
     menuPage();
+    popular();
 });
 
 const contactTab = document.createElement('button');

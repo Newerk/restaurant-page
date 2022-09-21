@@ -5,6 +5,7 @@ import { sides } from "./sides";
 import { drinks } from "./drinks";
 import { specials } from "./specials";
 
+
 export const menuPage = () => {
     const content = document.querySelector('#content');
 
