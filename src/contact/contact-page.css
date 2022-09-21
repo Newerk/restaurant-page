@@ -1,6 +1,12 @@
-
 .form-container {
-    background-color: grey; 
-    width: 20vw; 
+    background-color: grey;
+    width: 20vw;
     height: 60vh;
+}
+
+#map {
+    height: 20rem;
+    width: 70rem;
+    background: url('../images/google-map.png');
+    background-position: center;
 }
