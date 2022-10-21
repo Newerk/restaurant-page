@@ -1,28 +1,259 @@
-.food-img-container {
-    width: 100vw;
-    height: 30rem;
-    border: 2px solid black;
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
+:root {
+    --border_radius: .5rem;
 }
 
-#large-pic-container {
-    width: 100%;
+body {
+    background-color: black;
     height: 100%;
-    border: 2px solid black;
 
 }
 
-#small-pic-container {
+.promotion-container {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    padding-top: 5rem;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    border: 2px solid black;
+    grid-template-columns: minmax(400px, calc(100vw - 27rem)) 1fr;
+    grid-auto-flow: row;
 
 }
+
+#large-pic {
+    grid-area: 1 / 1;
+    background-image: url('../images/miaso-steik-gril.jpeg');
+    background-size: cover;
+    background-position: 10%;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+    border-radius: var(--border_radius);
+
+    display: flex;
+    justify-content: flex-end;
+
+
+
+}
+
+.small-pic-container {
+    height: fit-content;
+    width: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
 
 .small {
-    border: 2px solid black;
+    width: 27vh;
+    height: 27vh;
+    border-radius: var(--border_radius);
 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.one {
+    background-image: url('../images/0622-Summer-Goddess-Chicken-Salad.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.two {
+    background-image: url('../images/Screen\ Shot\ 2022-10-18\ at\ 9.56.01\ AM.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.three {
+    background-image: url('../images/seasoned-steakhouse-wings-d-20191119-dpv.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.four {
+    background-image: url('../images/shrimp-skillet-size.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.row-two {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr;
+    background-color: rgb(170, 2, 2);
+
+}
+
+.tag-us-container {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    border-radius: var(--border_radius);
+    height: 63vh;
+
+    margin: 1rem;
+    margin-top: .6rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8vh, 20vh));
+    grid-template-rows: repeat(auto-fit, minmax(8vh, 20vh));
+    gap: 1rem;
+
+}
+
+#tag-us-text {
+    color: white;
+    width: 100%;
+    font-size: 3rem;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    padding-left: 1rem;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 1rem;
+
+}
+
+[class^="tag-img"] {
+    border-radius: var(--border_radius);
+}
+
+.head-chef-container {
+    grid-column: 3 / 6;
+    grid-row: 1 / 3;
+    background-color: rgb(41, 41, 41);
+    padding-left: 1rem;
+    color: white;
+}
+
+#chef-title {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+#chef-text {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1rem;
+
+}
+
+
+
+#chef-img {
+    background-image: url('../images/chef-cooking.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 33vw;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border_radius);
+}
+
+.order-now-btn {
+    background-color: rgb(250, 247, 63);
+    border-radius: 5rem;
+    align-self: flex-end;
+
+    border: 2px solid rgb(189, 169, 14);
+    padding: .4rem .7rem;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    /*15px*/
+    font-weight: bold;
+    transition: ease-in-out .2s;
+}
+
+.order-now-btn:hover {
+    background-color: rgb(170, 2, 2);
+    color: white;
+    transition: ease-in-out .4s;
+    border: 2px solid white;
+}
+
+.order-now-btn:active {
+    background-color: rgb(204, 1, 1);
+
+}
+
+
+/*tag us images*/
+[class$='g-one'] {
+    background-image: url('../images/social_media_food/5aa7d9cff375f6e0158b4578.webp');
+}
+
+[class$='g-two'] {
+    background-image: url('../images/social_media_food/18.jpeg');
+
+
+}
+
+[class$='g-three'] {
+    background-image: url('../images/social_media_food/598a0ec5b9cd6c4c008b4900.webp');
+
+
+}
+
+[class$='g-four'] {
+    background-image: url('../images/social_media_food/1529001542352.jpeg');
+
+
+}
+
+[class$='g-five'] {
+    background-image: url('../images/social_media_food/CoupleAtRestaurant_Lead.jpeg');
+
+
+}
+
+[class$='g-six'] {
+    background-image: url('../images/social_media_food/j5pb2gZg.webp');
+
+}
+
+[class$='g-seven'] {
+    background-image: url('../images/social_media_food/sweet-potato-chick-pea-buddha-bowls-tahini-sauce.webp');
+
+
+}
+
+[class$='g-eight'] {
+    background-image: url('../images/social_media_food/temp_8bfafe38-c6d6-4df1-a09d-1a4f9bd8dca7.jpeg');
+
+
+}
+
+[class$='g-nine'] {
+    background-image: url('../images/social_media_food/Young\ people\ eating\ lunch\ at\ restaurant.jpeg');
+
+
+}
+
+#discount-msg {
+    grid-column: 1 / 3;
+
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    height: 15vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15vh;
+}
+
+.boldtext {
+    color: rgb(250, 247, 63);
+    font-weight: bolder;
 }

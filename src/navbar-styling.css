@@ -1,0 +1,24 @@
+#navbar {
+    position:fixed;
+    height: 4rem;
+}
+
+#navbar>button {
+    background-color: black;
+    color: rgb(250, 247, 63);
+    border: none;
+    /* padding: 15px 0; */
+    width: 10rem;
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+
+    transition: ease-in-out .2s;
+
+}
+
+#navbar>button:hover {
+    background-color: rgb(21, 21, 21);
+}
+
+

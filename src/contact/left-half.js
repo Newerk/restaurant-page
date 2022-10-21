@@ -2,8 +2,11 @@ export const contactLeft = () => {
     const content = document.getElementById('content');
 
     const leftSidePage = document.createElement('div');
+    
     const formContainer = document.createElement('form');
     formContainer.className = 'form-container';
+    formContainer.setAttribute('style', 'gap: 2rem');
+
 
     content.appendChild(formContainer);
 
@@ -18,9 +21,11 @@ export const contactLeft = () => {
             const formInput = document.createElement('input');
             formInput.type = type;
             formInput.id = formInput.name = concat;
+            formInput.className = 'input';
 
             const labelName = document.createElement('p');
             labelName.textContent = label;
+            // labelName.setAttribute('style', 'margin-top: 1rem');
 
             form.appendChild(labelName);
             form.appendChild(formInput);
@@ -59,6 +64,7 @@ export const contactLeft = () => {
                     textarea.id = 'message';
                     const labelName = document.createElement('p');
                     labelName.textContent = 'Message';
+                    labelName.setAttribute('style', 'margin-top: 1rem');
 
                     msgContainer.appendChild(labelName);
                     msgContainer.appendChild(textarea);
@@ -71,6 +77,7 @@ export const contactLeft = () => {
 
         const submitBtn = document.createElement('button');
         submitBtn.textContent = 'Submit';
+        submitBtn.id = 'submit';
         formContainer.appendChild(submitBtn);
 
         leftSidePage.appendChild(formContainer);

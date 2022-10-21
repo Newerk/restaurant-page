@@ -10,13 +10,16 @@ export const contactRight = () => {
     rightSidePage.appendChild(map);
 
     const address = document.createElement('h4');
-    address.textContent = 'address here'
+    address.textContent = '795 Kingston Lacy Blvd, Plungerville, TX 78445'
+    address.id = 'address';
 
     const hours = document.createElement('h4');
-    hours.textContent = 'store hours here'
+    hours.textContent = '11AM - 12AM'
+    hours.id = 'hours';
 
     const number = document.createElement('h4');
-    number.textContent = 'phone number here'
+    number.textContent = '(531) 027-6339'
+    number.id = 'number';
 
 
     rightSidePage.appendChild(address);

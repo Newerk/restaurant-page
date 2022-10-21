@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+
+.menu-container {
+    color: yellow;
+    text-align: center;
+    font-size: 32px;
+}
+
+#content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1 > p {
+    font-size: 20px;
+    font-weight: 100;
+    width: 100vw;
+    height: 100%;
+}
+
+.menu-item {
+    width: 100vw;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.menu-navbar {
+    height: max-content;
+    width: 100vw;
+    background-color: black;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    position: fixed;
+
+
+}
+
+.menu-navbar>button {
+    font-family: 'Dancing', cursive;
+
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    transition: ease-in-out .2s;
+
+}
+
+.menu-nav-btn:hover {
+    background-color: rgb(52, 52, 52)!important;
+
+}
+
